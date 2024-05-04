@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+</head>
+<body>
+    <h1>Welcome to the canteen!</h1>
+    <h4>Here are the prices</h4>
+
+    <ul>
+        <li>Donut - 25 PHP</li>
+        <li>Kikiam - 20 PHP</li>
+        <li>Milktea - 49 PHP</li>
+    </ul>
+    <form action="index.php" method="POST">
+        <label for="item">Choose your order:</label>
+        <select name="item" id="item">
+            <option value="donut">Donut - 25 PHP</option>
+            <option value="kikiam">Kikiam - 20 PHP</option>
+            <option value="milktea">Milktea - 49 PHP</option>
+        </select><br><br>
+        <label for="quantity">Quantity:</label>
+        <input type="number" name="quantity" id="quantity" min="1" required><br><br>
+        <label for="cash">Cash:</label>
+        <input type="number" name="cash" id="cash" required><br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
+
+
